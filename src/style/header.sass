@@ -1,72 +1,57 @@
-@import './vars'
+@import "./vans"
     
-header
-    .wrapper
-        justify-content: space-between
-        padding: 8px 0
-        &.home
-            padding: 8px 60px 8px 60px
-            margin: 0
-            width: calc(100% - 120px)
-
-
-header.soft
-    background-color: $head   
-    color: $text-white
-    .text
-        position: absolute
-        left: calc(50% - 107px)
-    .links a
-        font-weight: 400
-        font-size: 13px
-        line-height: 24px
-        color: $text-white
-        margin-right: 15px
-    .personalisation
+.softHeader
+    border-bottom: 1px solid $head
+    &__wrapper
         display: flex
-        .socials a
-            color: $text-white
-            margin-right: 24px
-        .switcher a
-            position: relative
-            color: $text-white
-            margin-right: 22px
-            &:first-child
-                margin-right: 52px
-            &::after
-                position: absolute
-                right: -22px
-                top: calc(50%  -  4px)
-                content: ''
-                width: 12px
-                height: 12px
-                background-image: url(./img/icons/arrow.svg)
-
-header.main
-    color: $head
-    margin-top: 30px
-    .links a
+        justify-content: space-between
+        margin: 10px 51px !important
+    &__contact
+        display: flex
+        align-items: center
+        h1
+            text-align: center
+            margin-top: 5px
+            margin-right: 13px
+            font-weight: 700
+            font-size: 18px
+            line-height: 125%
+    &__social 
+        a
+            margin-top: 0
+            width: 40px
+            height: 40px
+            color: $head
+            &:not(:last-child)
+                margin-right: 20px
+    &__number
         position: relative
+        margin-left: 79px 
         color: $head
-        font-weight: 500
-        font-size: 14px
-        line-height: 24px
-        margin-right: 15px
-        &::before
-            transition-duration: 0.4s
-            width: 0
-            content: ''
-            bottom: -7px
-            position: absolute
-            height: 2px
-            background-color: $head
-        &:hover
+        font-weight: 700
+        font-size: 18px
+        line-height: 125%
+    &__links
+        display: flex
+        align-items: center
+        height: 40px
+        a
+            position: relative
+            color: $head
+            margin-top: 0
+            margin-bottom: 0  
+            font-weight: 700
+            font-size: 18px
+            line-height: 125%
+            &:not(:last-child)
+                margin-right: 15px
             &::before
-                width: 90%
-    .logo a
-        position: absolute
-        left: calc(50% - 54px)
-    .icons a
-        margin-right: 30px
-        &:last-child
-            margin: 0
+                position: absolute
+                content: ''
+                width: 0
+                bottom: -5px
+        .active
+            &::before
+                width: calc( 100% - 5px )  
+                background-color: $green
+                border: 3px solid $green
