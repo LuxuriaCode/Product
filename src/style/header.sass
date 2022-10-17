@@ -55,3 +55,55 @@
                 width: calc( 100% - 5px )  
                 background-color: $green
                 border: 3px solid $green
+            
+.mainHeader
+    &__wrapper
+        display: flex
+        margin: 15px 51px !important
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+    &__variation 
+        display: flex
+        a
+            position: relative
+            color: $head
+            font-weight: 700
+            font-size: 18px
+            line-height: 125%
+            &:not(:last-child)
+                margin-right: 38px
+        .arrow
+            position: absolute
+            right: -20px
+            top: 0
+    &__logo
+        margin-left: 115px
+        margin-right: 319px 
+    &__bagSpace
+        display: flex
+        justify-content: space-between
+    &__bag
+        display: flex
+        flex-direction: row
+        align-items: center
+        margin-right: 30px 
+        .bag
+            padding: 0px
+            gap: 5px
+            color: $head
+            font-weight: 700
+            font-size: 18px
+            line-height: 125%
+    &__call
+        display: flex
+        flex-direction: row
+        align-items: center
+        .button
+            color: $white
+            font-weight: 700
+            font-size: 18px
+            line-height: 125%
+            
+
+                

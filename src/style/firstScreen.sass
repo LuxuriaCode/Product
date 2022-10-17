@@ -1,0 +1,47 @@
+@import "./vans"
+
+.firstScreen
+    display: flex
+    background-size: cover
+    background-image: url("./img/firstScreenImage.png")
+    height: calc(100vh - 175px)
+    min-height: 700px
+    width: 100vw
+    &__wrapper
+        align-items: flex-start
+        height: 100%
+        .info
+            position: relative
+            background-color: $white
+            padding: 99px 90px 101px
+            display: flex
+            flex-direction: column
+            text-align: center
+            h1
+                color: $head
+                font-weight: 700
+                font-size: 64px
+                line-height: 100%
+                margin: 0
+            h4
+                margin-top: 50px
+                text-align: center
+                color: $head
+                font-weight: 700
+                font-size: 36px
+                line-height: 125%
+            span
+                width: 314px
+                color: $head
+                font-weight: 400
+                font-size: 36px
+                line-height: 125%
+            &::before
+                position: absolute
+                content: ''
+                top: 0
+                left: 0
+                height: 100%
+                width: 15px
+                background-color: $green
+                border: 1px solid $green
